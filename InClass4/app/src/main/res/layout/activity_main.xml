@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="example.com.inclass4.MainActivity">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint"
+        android:id="@+id/spinnerLength"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="49dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cbNumbers"
+        android:id="@+id/checkBoxNumber"
+        android:layout_below="@+id/spinnerLength"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cbUpperCase"
+        android:id="@+id/checkBoxUppercase"
+        android:layout_below="@+id/checkBoxNumber"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cbLowercase"
+        android:id="@+id/checkBoxLowercase"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBoxUppercase"
+        android:layout_alignParentLeft="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cbSpecialchars"
+        android:id="@+id/checkBoxSpecialchars"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBoxLowercase"
+        android:layout_alignParentLeft="true"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/passwordAsync"
+        android:id="@+id/buttonAsync"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/passwordThread"
+        android:id="@+id/buttonThread"
+        android:layout_above="@+id/buttonAsync"
+        android:layout_toEndOf="@+id/checkBoxNumber"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/passwordLength"
+        android:id="@+id/textViewPasswordLength"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/spinnerLength"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewGeneratedPassword"
+        android:gravity="center_horizontal"
+        android:textColor="#ff0000"
+        android:layout_below="@+id/checkBoxSpecialchars"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>

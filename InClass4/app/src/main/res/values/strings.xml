@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">InClass4</string>
+    <string name="cbNumbers">Numbers</string>
+    <string name="cbUpperCase">Uppercase Letters</string>
+    <string name="cbLowercase">Lowercase Letters</string>
+    <string name="cbSpecialchars">Special Characters</string>
+    <string name="passwordAsync">Generate Password (AsyncTask)</string>
+    <string name="passwordThread">Generate Password (Thread)</string>
+    <string-array name="spinnerItems">
+        <item>8 - 12</item>
+        <item>13 - 17</item>
+        <item>18 - 22</item>
+    </string-array>
+    <string name="hint">Select Password Length</string>
+    <string name="passwordLength">Select Password Length</string>
+</resources>
