@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">In Class 2b</string>
+    <string name="action_settings">Settings</string>
+    <string name="Meters_TextView_Label">Meters:</string>
+    <string name="Result_Textview_label">Result:</string>
+    <string name="Inches_RadioButton_label">To Inches</string>
+    <string name="Feets_RadioButton_label">To Feets</string>
+    <string name="Miles_RadioButton_label">To Miles</string>
+    <string name="ClearAll_RadioButton_label">Clear All</string>
+    <string name="Convert_button_label">Convert</string>
+</resources>
