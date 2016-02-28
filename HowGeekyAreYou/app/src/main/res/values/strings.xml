@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">How Geeky Are You?</string>
+    <string name="splash_activity">Splash</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="welcome_activity">Welcome</string>
+    <string name="quiz_activity">Quiz</string>
+    <string name="result_activity">Results</string>
+    <string name="btnExit">Exit</string>
+    <string name="HGRU_TextView">How Geeky Are You?</string>
+    <string name="Quit_ButtonLabel">Quit</string>
+    <string name="Next_ButtonLabel">Next</string>
+    <string name="TryAgain_ButtonLabel">Try Again</string>
+    <string name="QuizResult_label">Quiz Result:</string>
+    <string name="Non_Geek_Desc">There isn\'t a single geeky bone in your body. You prefer to party rather than study, and have someone else fix your computer, if need be. You\'re just too cool for this. You probably don\'t even wear glasses!</string>
+    <string name="Semi_Geek_Desc">Maybe you\'re just influenced by the trend, or maybe you just got it all perfectly balanced. You have some geeky traits, but they aren\'t as \"hardcore\" and they don\'t take over your life. You like some geeky things, but aren\'t nearly as obsessive about them as the uber-geeks. You actually get to enjoy both worlds</string>
+    <string name="Uber_Geek_Desc">You are the geek supreme! You are likely to be interested in technology, science, gaming and geeky media such as Sci-Fi and fantasy. All the mean kids that used to laugh at you in high school are now begging you for a job. Be proud of your geeky nature, for geeks shall inherit the Earth!</string>
+    <string name="LoadingQues_TextViewLabel">Loading Questions</string>
+</resources>
