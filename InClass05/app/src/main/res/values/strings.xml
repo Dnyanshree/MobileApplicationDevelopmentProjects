@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InClass05</string>
+    <string name="Go_Button_Label">Go</string>
+    <string name="SrearchHint">Search keyword</string>
+</resources>
