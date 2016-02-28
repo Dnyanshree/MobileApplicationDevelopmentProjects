@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="example.com.ticketreservation.CreateTicketActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editTextName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:maxLength="20" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSource"
+        android:layout_below="@+id/editTextName"
+        android:layout_centerHorizontal="true"
+        android:hint="Source"
+        android:editable="false"
+        android:clickable="true"
+        android:focusable="false" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDestination"
+        android:layout_below="@+id/editTextSource"
+        android:layout_centerHorizontal="true"
+        android:hint="Destination"
+        android:editable="false"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Trip_TextViewLabel"
+        android:id="@+id/textViewTrip"
+        android:layout_below="@+id/editTextDestination"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTrip"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OneWay_RadioButtonLabel"
+            android:id="@+id/radioButtonOneWay"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RoundTrip_RadioButtonLabel"
+            android:id="@+id/radioButtonRoundTrip"
+            android:checked="false" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editTextDepartureDate"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:hint="Departure Date"
+        android:clickable="true"
+        android:focusable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/editTextDepartureTime"
+        android:layout_alignTop="@+id/editTextDepartureDate"
+        android:layout_toEndOf="@+id/editTextDepartureDate"
+        android:hint="Time"
+        android:clickable="true"
+        android:focusable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editTextReturnDate"
+        android:layout_below="@+id/editTextDepartureDate"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:hint="Returning Date"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:focusable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/editTextReturnTime"
+        android:layout_alignTop="@+id/editTextReturnDate"
+        android:layout_toEndOf="@+id/editTextReturnDate"
+        android:hint="Time"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:focusable="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/PrintSummary_buttonLabel"
+        android:id="@+id/buttonPrintSummary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

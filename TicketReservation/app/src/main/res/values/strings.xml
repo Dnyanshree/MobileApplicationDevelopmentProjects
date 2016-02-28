@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Ticket Reservation</string>
+    <string name="title_activity_edit_ticket">Edit Ticket</string>
+    <string name="title_activity_create_ticket">Create Ticket</string>
+    <string name="title_activity_delete_ticket">Delete Ticket</string>
+    <string name="title_activity_print_ticket">Print Ticket</string>
+    <string name="title_activity_view_ticket">View Ticket</string>
+    <string name="CreateTicketButtonLabel">Create Ticket</string>
+    <string name="EditTicketButtonLabel">Edit Ticket</string>
+    <string name="DeleteTicketButtonLabel">Delete Ticket</string>
+    <string name="ViewTicketButtonLabel">View Ticket</string>
+    <string name="PrintSummary_buttonLabel">Print Summary</string>
+    <string name="Trip_TextViewLabel">Trip:</string>
+    <string name="OneWay_RadioButtonLabel">One-Way</string>
+    <string name="RoundTrip_RadioButtonLabel">Round-Trip</string>
+    <string name="Finish_ButtonLabel">Finish</string>
+    <string name="Return_TextViewLabel">Return:</string>
+    <string name="Departure_TextViewLabel">Departure:</string>
+    <string name="Destination_TextViewLabel">Destination:</string>
+    <string name="Source_TextViewLabel">Source:</string>
+    <string name="Name_TextViewLabel">Name:</string>
+    <string name="Itinerary_TextViewLabel">ITINERARY</string>
+    <string name="Save_ButtonLabel">Save</string>
+    <string name="SelectTicket_ButtonLabel">Select Ticket</string>
+    <string name="Cancel_ButtonLabel">Cancel</string>
+    <string name="Delete_ButtonLabel">Delete</string>
+    <string name="CustCare_TextViewLabel">Customer Care: 999-999-9999</string>
+
+    <string-array name="cities_array">
+        <item>Albany, NY</item>
+        <item>Atlanta, GA</item>
+        <item>Boston, MA</item>
+        <item>Charlotte, NC</item>
+        <item>Chicago, IL</item>
+        <item>Greenville, SC</item>
+        <item>Houston, TX</item>
+        <item>Las Vegas, NV</item>
+        <item>Los Angeles, CA</item>
+        <item>Miami, FL</item>
+        <item>Myrtle Beach, SC</item>
+        <item>New York, NY</item>
+        <item>Portland, OR</item>
+        <item>Raleigh, NC</item>
+        <item>San Jose, CA</item>
+        <item>Washington, DC</item>
+    </string-array>
+    <string name="Choose_Source">Source</string>
+    <string name="Choose_Destination">Destination</string>
+    <string name="Pick_Ticket">Pick a Ticket</string>
+    <string name="Error_ToastMsg">Source and Destination cannot be same!</string>
+    <string name="NameBlank_ToastMsg">Name cannot be blank</string>
+</resources>
