@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Computer Calculator</string>
+    <string name="Status_TextView_Label">Your Status:</string>
+    <string name="Price_TextViewLabel">Price: $0.00</string>
+    <string name="Calculate_Button_Label">Calculate</string>
+    <string name="Reset_Button_Label">Reset</string>
+    <string name="Delivery_Switch_Label">Delivery</string>
+    <string name="Tip_TextView_Label">Tip %</string>
+    <string name="PercentTip_TextView_Label">15%</string>
+    <string name="Accessories_TextView_Label">Accessories</string>
+    <string name="Mouse_CheckBox_Label">Mouse</string>
+    <string name="FlashDrive_TextView_Label">Flash Drive</string>
+    <string name="CoolingPad_ChechkBox_Label">Cooling Pad</string>
+    <string name="CarryingCase_CheckBox_Label">Carrying Case</string>
+    <string name="Storage_TextView_Label">Storage</string>
+    <string name="Memory_TextView_Label">Memory</string>
+    <string name="RadioButton_Label_250GB">250GB</string>
+    <string name="RadioButton_Label_500GB">500GB</string>
+    <string name="RadioButton_Label_750GB">750GB</string>
+    <string name="RadioButton_Label_1TB">1TB</string>
+    <string name="RadioButton_Label_2GB">2GB</string>
+    <string name="RadioButton_Label_4GB">4GB</string>
+    <string name="RadioButton_Label_8GB">8GB</string>
+    <string name="RadioButton_Label_16GB">16GB</string>
+    <string name="Budget_TextView_Label">Budget ($)</string>
+    <string name="Status_Positive">Within Budget</string>
+    <string name="Status_Negative">Over Budget</string>
+    <string name="Input_Hint">Enter dollar amount</string>
+</resources>
