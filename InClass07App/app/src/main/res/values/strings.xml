@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">InClass07 App</string>
-    <string name="submit">Submit</string>
-    <string name="abstract1">Abstract</string>
-    <string name="mainactivity">Main Activity</string>
-    <string name="topStories">Top Stories Activity</string>
-    <string name="details">Details Activity</string>
-
-</resources>
