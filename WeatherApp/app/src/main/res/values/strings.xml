@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="MainActivity_name">Homework 5</string>
+    <string name="AddCityActivity_name">Add City Activity</string>
+    <string name="HourlyDataActivity_name">Hourly Data Activity</string>
+    <string name="DetailsActivity_name">Details Activity</string>
+    <string name="city_hint">City Name (Eg. Charlotte)</string>
+    <string name="state_hint">State Initial (Eg. NC)</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_addCity">Add City</string>
+    <string name="DefaultText">There are no cities to display. Add using the “+” button from the menu</string>
+    <string name="SaveCityButtonLabel">Save City</string>
+    <string name="CurrLocationtvLabel">Current Location:</string>
+    <string name="MaxTempLabel">Max Temperature: </string>
+    <string name="MinTempLabel">Min Temperature: </string>
+    <string name="FeelsLikeLabel">Feels Like: </string>
+    <string name="HumidityLabel">Humidity: </string>
+    <string name="DewpointLabel">Dewpoint: </string>
+    <string name="PressureLabel">Pressure: </string>
+    <string name="CloudsLabel">Clouds: </string>
+    <string name="WindsLabel">Winds: </string>
+</resources>

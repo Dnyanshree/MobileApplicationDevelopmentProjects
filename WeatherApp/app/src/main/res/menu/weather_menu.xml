@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:WeatherApp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add_city"
+        android:icon="@drawable/add_icon36dp"
+        android:title="@string/action_addCity"
+        android:orderInCategory="100"
+        WeatherApp:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        WeatherApp:showAsAction="never"/>
+</menu>
