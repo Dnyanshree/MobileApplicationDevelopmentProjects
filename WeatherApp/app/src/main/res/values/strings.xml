@@ -19,4 +19,6 @@
     <string name="PressureLabel">Pressure: </string>
     <string name="CloudsLabel">Clouds: </string>
     <string name="WindsLabel">Winds: </string>
+    <string name="NoteHint">Enter Note between 1 and 30 characters</string>
+    <string name="SavenoteButtonLabel">Save Note</string>
 </resources>

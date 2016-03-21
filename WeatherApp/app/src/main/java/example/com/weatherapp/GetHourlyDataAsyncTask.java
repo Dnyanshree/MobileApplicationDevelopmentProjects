@@ -1,4 +1,6 @@
 package example.com.weatherapp;
+
+
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -12,11 +14,13 @@ import java.util.ArrayList;
 
 public class GetHourlyDataAsyncTask extends AsyncTask<String, Void, ArrayList<Weather>> {
     private contextInterface activity;
+    String activityName;
     interface contextInterface{
         public void setupData(ArrayList<Weather> wData);
     }
-    public GetHourlyDataAsyncTask(contextInterface activity){
+    public GetHourlyDataAsyncTask(contextInterface activity,String activityName){
         this.activity= activity;
+        this.activityName=activityName;
     }
     @Override
     protected ArrayList<Weather> doInBackground(String... params) {
@@ -28,10 +32,16 @@ public class GetHourlyDataAsyncTask extends AsyncTask<String, Void, ArrayList<We
             con.setRequestMethod("GET");
             con.connect();
             int statusCode = con.getResponseCode();
-            if(statusCode == HttpURLConnection.HTTP_OK){
+
+            if(statusCode == HttpURLConnection.HTTP_OK && params[0].contains("hourly")){
                 InputStream in = con.getInputStream();
                 return WeatherUtil.WeatherPullParser.weatherParser(in);
             }
+            else if(statusCode == HttpURLConnection.HTTP_OK && params[0].contains("forecast10day")){
+                InputStream in = con.getInputStream();
+                return WeatherUtil.WeatherForecastPullParser.weatherParser(in);
+            }
+
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -44,15 +54,23 @@ public class GetHourlyDataAsyncTask extends AsyncTask<String, Void, ArrayList<We
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        HourlyDataActivity.progressDialog.show();
+
+       try{
+           if(activityName.equals("hourly"))
+                HourlyDataActivity.progressDialog.show();
+            else
+               ForecastActivity.progressDialog.show();
+       }
+       catch (Exception e){e.printStackTrace();}
     }
     @Override
     protected void onPostExecute(ArrayList<Weather> wData) {
         super.onPostExecute(wData);
-        HourlyDataActivity.progressDialog.dismiss();
-       if(wData != null){
-            Log.d("Demo", wData.toString());
-        }
+        try{ if(activityName.equals("hourly"))
+            HourlyDataActivity.progressDialog.dismiss();
+        else
+            ForecastActivity.progressDialog.dismiss();}
+        catch (Exception e){e.printStackTrace();}
         activity.setupData(wData);
     }
 }

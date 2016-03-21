@@ -25,7 +25,11 @@
         <activity
             android:name=".HourlyDataActivity"
             android:label="@string/HourlyDataActivity_name" />
-        <activity android:name=".DetailsActivity"></activity>
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".CityDataActivity" />
+        <activity android:name=".ForecastActivity" />
+        <activity android:name=".AddNotesActivity" />
+        <activity android:name=".NoteActivity"></activity>
     </application>
 
 </manifest>

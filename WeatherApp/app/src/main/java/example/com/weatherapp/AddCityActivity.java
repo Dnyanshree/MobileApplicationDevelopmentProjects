@@ -14,6 +14,7 @@ import java.net.URLEncoder;
 public class AddCityActivity extends AppCompatActivity implements ValidationAsyncTask.sendResult {
     EditText etCity,etState;
     String City,State;
+    DatabaseDataManager dm;
 
 
     @Override
@@ -26,6 +27,9 @@ public class AddCityActivity extends AppCompatActivity implements ValidationAsyn
 
         etCity = (EditText) findViewById(R.id.editTextCity);
         etState = (EditText) findViewById(R.id.editTextState);
+
+        dm = DatabaseDataManager.getDatabaseDataManagerInstance();
+        dm.init(this);
 
         findViewById(R.id.buttonSaveCity).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +51,9 @@ public class AddCityActivity extends AppCompatActivity implements ValidationAsyn
         if(result==true){
             intent.putExtra("City", City);
             intent.putExtra("State", State);
+            City=   City.replace(" ","_");
+            City city = new City(City,State);
+            dm.saveCity(city);
             startActivity(intent);
         }
         else{

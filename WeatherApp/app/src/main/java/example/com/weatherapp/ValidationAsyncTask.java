@@ -30,7 +30,7 @@ public class ValidationAsyncTask extends AsyncTask<String,Void,Boolean > {
         try {
             params[0]=params[0].replace(" ","%20");
             URL url = new URL(params[0]);
-            Log.d("URL",url.toString());
+
 
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
@@ -47,7 +47,7 @@ public class ValidationAsyncTask extends AsyncTask<String,Void,Boolean > {
 
 
                 if(!(sb==null) && sb.toString().length()>2){
-                    Log.d("Validation",sb.toString()+sb.toString().length());
+
                     return true;
                 }
                 return false;

@@ -30,8 +30,11 @@ public class CityAdapter extends ArrayAdapter<String> {
 
         String city = mData.get(position);
         TextView tvCity = (TextView) convertView.findViewById(R.id.textViewCity);
-        tvCity.setText(city);
-
+        TextView tvTemp = (TextView) convertView.findViewById(R.id.textViewTemp);
+        tvCity.setText(city.split(":")[0]);
+        try {
+            tvTemp.setText(city.split(":")[1]+(char)0x00B0 + "F");
+        }catch (Exception e){e.printStackTrace();}
         return convertView;
     }
 }
