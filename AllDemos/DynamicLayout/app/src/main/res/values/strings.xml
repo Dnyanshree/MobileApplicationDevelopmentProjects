@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DynamicLayout</string>
+    <string name="HelloWorld_TextView_Label">Hello World !!</string>
+    <string name="Click_Button_Label">Click Me!!</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActivityForResultExample</string>
+    <string name="MainActivity_TextView_label">Main Activity</string>
+    <string name="GotoSecond_Button_Label">Goto Second Activity</string>
+    <string name="SecondActivity_TextView_Label">Second Activity</string>
+    <string name="SendResult_Button_Label">Send Result</string>
+</resources>
