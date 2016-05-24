@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FragmentContainer"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="#111">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageViewProfilePic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:paddingLeft="15dp"
+            android:paddingTop="25dp"
+            android:id="@+id/textViewFullName"
+            android:textColor="#FFFF"
+            android:layout_toEndOf="@+id/imageViewProfilePic"/>
+
+        <ListView android:id="@+id/left_drawer_list"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_below="@+id/imageViewProfilePic"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:background="#111"/>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>

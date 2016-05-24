@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InClass13</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="place_type_title">Select the place type</string>
+</resources>

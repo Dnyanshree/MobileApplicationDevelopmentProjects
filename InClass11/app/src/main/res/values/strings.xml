@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">InClass11</string>
+    <string name="BtnLogin">Login</string>
+    <string name="BtnCreateNewAccount">Create New Account</string>
+    <string name="BtnSignUp">Sign Up</string>
+    <string name="BtnCancel">Cancel</string>
+    <string name="addExpense">Add an Expense</string>
+    <string name="category">Category</string>
+    <string name="btnAddExpense">Add Expense</string>
+    <string name="Expensedetails">Expense Details</string>
+    <string name="name">Name</string>
+    <string name="amount">Amount</string>
+    <string name="dat">Date</string>
+</resources>

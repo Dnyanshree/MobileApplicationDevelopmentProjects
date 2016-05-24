@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Study\Spring 2016\_Mobile Application Development Class\Framework7-master\Framework7-master\ContactsApp\platforms\android\CordovaLib\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Study\Spring 2016\_Mobile Application Development Class\Framework7-master\Framework7-master\ContactsApp\platforms\android\CordovaLib\src\debug\jniLibs"/></dataSet></merger>
